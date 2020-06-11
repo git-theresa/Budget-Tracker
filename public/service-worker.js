@@ -1,6 +1,6 @@
 const FILES_TO_CACHE = ["/", "/index.html", "/index.js", "/db.js",  "/api.js"];
 
-const CACHE_NAME = "static-cache-v2";
+const CACHE_NAME = "static-cache-v3";
 const DATA_CACHE_NAME = "data-cache-v1";
 
 // install
@@ -55,4 +55,12 @@ self.addEventListener("fetch", function(evt) {
     );
 
     return;
-}});
+  }
+  evt.respondWith(
+    caches.open(CACHE_NAME).then(cache => {
+      return cache.match(evt.request).then(response => {
+        return response || fetch(evt.request);
+      });
+    })
+  );
+});
