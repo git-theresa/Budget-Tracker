@@ -8,7 +8,7 @@
   # **Budget-Tracker**
   
   ##  **_Live Link_** 
-
+https://ez-budgets.herokuapp.com/
   
   ##  **Table of Contents**
   * Description
@@ -19,6 +19,8 @@
   * Contact
   
   ##  **Description**
+
+  Budget Tracker allows the user to track their spending and deposits online and offline.
  
 <!-- <img src = "public/assets/img/fitness.jpg" alt = "screenshot"> -->
  
@@ -28,7 +30,7 @@
 
  
   ## **Technology Stack**
- HTML, CSS, JavaScript, jQuery, Node.Js, Node Express, MongooseDb, WebPack
+ HTML, CSS, JavaScript, jQuery, Node.Js, Node Express, MongooseDb
 
   ##  **Usage**
 
